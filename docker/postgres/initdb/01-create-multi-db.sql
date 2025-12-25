@@ -1,0 +1,9 @@
+-- DEV database
+CREATE USER dev_user WITH PASSWORD 'qwer123';
+CREATE DATABASE dbdev OWNER dev_user;
+GRANT ALL PRIVILEGES ON DATABASE dbdev TO dev_user;
+
+-- QA database
+CREATE USER qa_user WITH PASSWORD 'qwer123';
+CREATE DATABASE dbqa OWNER qa_user;
+GRANT ALL PRIVILEGES ON DATABASE dbqa TO qa_user;
